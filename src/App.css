@@ -1,0 +1,225 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+nav {
+  padding: 0px 10%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 15vh;
+  align-items: center;
+  background-color: #1c87a0;
+  font-family: Arial;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  transition: all 0.3s ease 0s;
+  margin-right: auto;
+  text-transform: UPPERCASE;
+  color: #dbdad7;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.nav-links {
+  display: inline-flex;
+}
+
+.nav-right {
+  align-items: right;
+}
+
+.nav-links li {
+  padding: 0px 20px;
+  list-style: none;
+}
+
+.nav-links li:nth-child(4) {
+  padding: 0px 0px 0px 20px;
+}
+
+.nav-links a {
+  transition: all 0.8s ease 0s;
+  color: #dbdad7;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.container {
+  padding-top: 10%;
+  min-height: 100%;
+}
+
+/* .mainOne {
+  overflow: auto;
+  background-color: yellow;
+  height: 1000px;
+  padding-top: 15vh;
+} */
+
+footer {
+  position: fixed;
+  padding: 0px 10%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c87a0;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  height: 8vh;
+}
+
+.b_info {
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+.footer-links {
+  display: flex;
+  border-left: 1px solid #dbdad7;
+  line-height: 30px;
+}
+
+.footer-links li {
+  padding: 0px 10px;
+  list-style: none;
+}
+
+.footer-links li a {
+  color: #dbdad7;
+  text-decoration: none;
+}
+
+.footer-links li a:nth-child(1) {
+  border-bottom: 1px solid rgba(219, 218, 215, 0.5);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+
+  padding: 10px 10px 20px 0px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 10%;
+  margin-bottom: 8vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  display: flex;
+  height: 150px;
+}
+
+img {
+}
+
+.info {
+  float: left;
+  align-content: center;
+  width: 100%;
+  padding-top: 23px;
+}
+
+.info h5 {
+  float: left;
+}
+
+.button-cont {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding-right: 25%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #1c87a0;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.box {
+  text-align: left;
+  display: inline-block;
+  border: 1px black solid;
+  height: 100px;
+  width: 500px;
+}
+
+.box-items {
+  display: flex !important;
+  align-items: center;
+}
+
+li {
+  margin: auto;
+  list-style: none;
+}

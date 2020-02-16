@@ -1,23 +1,27 @@
 import React, { Component } from "react";
-
-// import {Nav, Navbar, Form, Button, NavDropdown, FormControl} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 class Navmain extends Component {
   render() {
     return (
       <nav>
         <div className="logo">
-          <h4>Profile Viewer</h4>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <h4>Profile Viewer</h4>
+          </Link>
         </div>
         <div className="nav-right">
           <ul className="nav-links">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <hr></hr>
-            <li>
-              <a href="add">Add New Profile</a>
-            </li>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <li>
+                <h6>Home</h6>
+              </li>
+            </Link>
+            <Link to="/add" style={{ textDecoration: "none" }}>
+              <li>
+                <h6>Add New Profile</h6>
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>

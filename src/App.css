@@ -305,31 +305,58 @@ textarea {
 }
 
 .container-profile-button button[class="save-button"] {
-  display: none;
   width: 200px;
   height: 50px;
   border-radius: 15px;
   color: black;
   background-color: white;
-  border: 3px #316672 solid;
+  border: 3px #24974a solid;
+}
+
+.container-profile-button button[class="save-button"]:hover {
+  color: white;
+  background-color: #24974a;
+  border: 3px white solid;
+  transition: all 0.3s ease 0s;
 }
 
 .container-profile-button button[class="cancel-button"] {
-  display: none;
   width: 200px;
   height: 50px;
   border-radius: 15px;
   color: black;
   background-color: white;
-  border: 3px #316672 solid;
+  border: 3px #852323 solid;
 }
 
-.container-profile-button button:hover {
+.container-profile-button button[class="cancel-button"]:hover {
+  color: white;
+  background-color: #852323;
+  border: 3px white solid;
+  transition: all 0.3s ease 0s;
+}
+
+.container-profile-button button[class="editprofile-button"]:hover {
   color: white;
   background-color: #1c87a0;
   border: 3px white solid;
+  transition: all 0.3s ease 0s;
 }
 
 .form-info-cont {
   display: none;
+}
+
+.edit-profile-cont {
+  width: 50%;
+}
+
+.edit-profile-cont input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }

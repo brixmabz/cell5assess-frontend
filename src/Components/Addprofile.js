@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class Addprofile extends Component {
   constructor(props) {
@@ -9,10 +10,11 @@ class Addprofile extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch("http://localhost:8080/addProfile", {
-      method: "post",
+    axios({
+      url: "http://localhost:8080/addProfile",
+      method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
+      data: JSON.stringify({
         name: this.state.name,
         bio: this.state.bio,
         bdate: this.state.bdate
@@ -32,7 +34,7 @@ class Addprofile extends Component {
         <h2 style={{ marginLeft: "25%" }}>Add a new celebrity</h2>
         <div className="add">
           <form onSubmit={this.handleSubmit}>
-            <label for="name">Full Name</label>
+            <label htmlFor="name">Full Name</label>
             <input
               placeholder="Enter complete name..."
               id="name"
@@ -41,7 +43,7 @@ class Addprofile extends Component {
               onChange={ev => this.setState({ name: ev.target.value })}
             />
             <br />
-            <label for="bio">Bio</label>
+            <label htmlFor="bio">Bio</label>
             <textarea
               placeholder="Actor/actress..."
               id="bio"
@@ -49,7 +51,7 @@ class Addprofile extends Component {
               onChange={ev => this.setState({ bio: ev.target.value })}
             ></textarea>
             <br />
-            <label for="bdate">Birth Date</label>
+            <label htmlFor="bdate">Birth Date</label>
             <input
               placeholder="MM-DD-YY"
               id="bdate"
